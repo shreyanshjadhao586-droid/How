@@ -1,0 +1,214 @@
+@font-face {
+    font-family: orbit;
+    src: url(./fonts/Orbitron-Regular-BF66babf324fbdd.ttf);
+}
+
+@font-face {
+    font-family: 'net';
+    src: url(/netron/Netron.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+
+    width: 100%;
+ overflow: hidden;
+
+}
+
+.main {
+
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 0 1vw;
+    justify-content: space-between;
+
+}
+
+#part2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+
+
+#part2 a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5vw;
+    font-family: net;
+}
+
+#part2 a:hover {
+    text-decoration: underline;
+}
+
+.nav h1 {
+    font-size: 3vw;
+    margin: 0;
+    font-family: net;
+
+
+
+}
+
+.nav i {
+
+    font-size: 2.5vw;
+    color: white;
+    margin-left: 20px;
+    font-weight: 800;
+    display: none;
+
+}
+
+.content {
+    height: calc(100% - 100px);
+    width: 100%;
+position: relative;
+
+}
+
+.content img {
+    height: 75vh;
+    width: 55vh;
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left {
+
+    position: absolute;
+    height: 100%;
+    width: 50%;
+
+    padding: 5vw 8vw;
+
+}
+
+.left h1 {
+    font-size: 4vw;
+    list-style: 4.4vw;
+
+}
+
+.left p {
+    font-size: vw;
+    font-weight: 800;
+    width: 80%;
+    padding-bottom: 3vw;
+
+}
+
+button {
+    font-size: 1.5vw;
+    padding: 1.3vw 2.3vw;
+    background-color: aquamarine;
+    color: royalblue;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+
+
+.right {
+
+    position: absolute;
+    height: 100%;
+    width: 50%;
+
+    right: 0;
+
+
+}
+
+.right img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 0;
+
+}
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+    .nav {
+        background-color: lightseagreen;
+        color: #fff;
+    }
+
+    .nav h1 {
+
+        font-size: 4vw;
+
+
+    }
+
+    .nav a {
+        font-size: 4vw;
+        display: none;
+
+
+    }
+
+    .nav i {
+        font-size: 6vw;
+        display: block;
+    }
+
+    .left p {
+        font-size: vw;
+        font-weight: 800;
+        width: 80%;
+        padding-bottom: 3vw;
+        color: #333;
+    }
+    button {
+    font-size: 3.5vw;
+    padding: 1.3vw 2.3vw;
+    background-color: aquamarine;
+    color: royalblue;
+    font-weight: 600;
+    border: none;
+    border-radius: 5;
+    height: 10vh;
+width: 30vw;
+}
+
+
+}
