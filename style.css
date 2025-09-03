@@ -5,8 +5,9 @@
 
 @font-face {
     font-family: 'net';
-    src: url(/netron/Netron.ttf);
+    src: url(./fonts/Netron.ttf);
 }
+
 
 
 * {
